@@ -1,0 +1,51 @@
+services:
+  frontend:
+    build:
+      context: ./OverStore-master
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./Billing-Api
+    ports:
+      - "5000:5000"
+    # volumes:
+    #   - ./Billing-Api:/app/
+
+    depends_on:
+     mysql:
+      condition: service_healthy
+
+  mysql:
+    image: mysql:8
+    healthcheck:
+     test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-pYES"]
+     interval: 10s
+     timeout: 10s
+     retries: 3
+
+    environment:
+      MYSQL_ROOT_PASSWORD: "YES"
+      MYSQL_DATABASE: "billing"
+      MYSQL_USER: "root"
+    ports:
+      - "3306:3306"
+    volumes:
+    - mysql-data:/var/lib/mysql
+    - ./billing.sql:/docker-entrypoint-initdb.d/billing.sql
+
+#   phpmyadmin:
+#     image: phpmyadmin/phpmyadmin
+#     ports:
+#       - "9090:80"
+#     environment:
+#       PMA_HOST: mysql
+#       MYSQL_ROOT_PASSWORD: "YES"
+#     depends_on:
+#       - mysql
+volumes:
+  mysql-data:
+
