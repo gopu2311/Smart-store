@@ -53,7 +53,8 @@ docker-compose up --build
 ```bash
 kubectl apply -f k8s/
 ```
-5. Provision Cloud Infrastructure (Optional)
+### 5. Provision Cloud Infrastructure
+
 Navigate to the Terraform folder and initialize/apply your infrastructure setup:
 
 ```bash
@@ -65,7 +66,8 @@ terraform apply
 Ensure your Terraform provider is configured correctly before running.
 
 ```
-🧰 Features
+**🧰 Features
+**
 🧾 Microservice-based architecture
 
 📦 Docker containerization for backend and frontend
@@ -77,8 +79,10 @@ Ensure your Terraform provider is configured correctly before running.
 📊 Billing management with SQL-backed database
 
 🖥️ Responsive UI (frontend in OverStore-master)
-```
-🛠️ Built With
+
+----
+
+**🛠️ Built With**
 Component	Technology
 Backend	Java / Spring Boot (Please confirm or update)
 Frontend	HTML/CSS/JavaScript (Please confirm or update)
