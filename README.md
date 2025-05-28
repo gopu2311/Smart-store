@@ -137,6 +137,9 @@ terraform apply
 Ensure your Terraform provider is configured correctly before running.
 
 ```
+
+----
+
 **🧰 Features
 **
 🧾 Microservice-based architecture
@@ -154,12 +157,19 @@ Ensure your Terraform provider is configured correctly before running.
 ----
 
 **🛠️ Built With**
+
 Component	Technology
+
 Backend	Java / Spring Boot (Please confirm or update)
+
 Frontend	HTML/CSS/JavaScript (Please confirm or update)
+
 Database	MySQL
+
 Container	Docker
+
 Orchestration	Kubernetes
+
 Provisioning	Terraform
 
 You can update the backend and frontend stack names as needed.
