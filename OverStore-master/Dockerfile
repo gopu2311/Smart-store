@@ -1,5 +1,5 @@
 # Build phase
-FROM node:18-alpine AS build
+FROM node:18-alpine
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
