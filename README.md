@@ -121,6 +121,11 @@ docker-compose up --build
 -----
 ```
 #### 4.Deploy with Kubernetes:
+
+Create map:
+```bash
+kubectl create configmap billing-init-script --from-file=billing.sql
+```
 ```bash
 kubectl apply -f k8s/
 ```
