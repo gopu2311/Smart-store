@@ -165,9 +165,9 @@ Ensure your Terraform provider is configured correctly before running.
 
 Component	Technology
 
-Backend	Java / Spring Boot (Please confirm or update)
+Backend	Java / Spring Boot
 
-Frontend	HTML/CSS/JavaScript (Please confirm or update)
+Frontend	HTML/CSS/JavaScript
 
 Database	MySQL
 
@@ -176,8 +176,6 @@ Container	Docker
 Orchestration	Kubernetes
 
 Provisioning	Terraform
-
-You can update the backend and frontend stack names as needed.
 
 
 
