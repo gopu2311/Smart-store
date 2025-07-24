@@ -8,11 +8,17 @@ Smart-store is a scalable, containerized microservices-based billing and invento
 
 Smart-store/
 ├── Billing-Api/ # Backend API for billing operations
+
 ├── OverStore-master/ # Frontend application for the store
+
 ├── k8s/ # Kubernetes deployment configurations
+
 ├── terraform/ # Infrastructure provisioning scripts using Terraform
+
 ├── billing.sql # SQL schema for the billing database
+
 ├── docker-compose.yml # Local development setup using Docker Compose
+
 └── README.md # Project documentation
 
 
